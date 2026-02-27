@@ -5,19 +5,88 @@
 <html>
 
 	<head>
+	
+		<style>
+		
+		/* Source: https://www.w3schools.com/css/css_navbar.asp */
+		
+		margin: 0;
+		padding: 0;
+		}
+
+		h2, p {
+		margin: 10px;
+		}
+
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  background-color: #333333;
+		  display: flex;
+		}
+
+		ul li a {
+		  display: block;
+		  color: white;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		
+		
+		#list-animaux {
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+			  background-color: #f1f1f1;
+			}
+
+			li a {
+			  display: block;
+			  color: black;
+			  padding: 8px 16px;
+			  text-decoration: none;
+			}
+
+			li a.active {
+			  background-color: #04AA6D;
+			  color: white;
+			}
+		
+			#page {
+			margin-left: 20px;
+			}
+			
+			#titre {
+			margin-left: 50px;
+			}
+			
+		}
+		
+		</style>
 		<meta charset="UTF-8">
-		<title>Mes animaux préférés</title>
+		<div id="page titre"><title>Mes animaux préférés</title>
 	</head>
 	
 	<body style="background-color: #82b4ed;">
 	
+		<ul>
+			<li><a href="exercice1.html"/>Exercice 1</a></li>
+			<li><a href="exercice2et4.html"/>Exercices 2 et 4</a></li>
+			<li><a href="exercice3.html"/>Exercice 3</a></li>
+		</ul>
+	
 		<a name="haut"><h1>Mes animaux préférés</h1>
 		<p>Bonjour! Voici une liste de mes animaux préférés :</p>
-		<ul> 
-		<li> <a href="#chien">Chien</a></li>
-		<li> <a href="#lapin">Lapin</a></li>
-		<li> <a href="#perroquet">Perroquet</a></li>
+		
+		<ul id="list-animaux">
+		  <li><a class="active" href="#chien">Chien</a></li>
+		  <li><a href="#lapin">Lapin</a></li>
+		  <li><a href="#perroquet">Perroquet</a></li>
 		</ul>
+		
 		<hr>
 		
 		<a name="chien"></a><h3>Chien</h3>
@@ -43,6 +112,9 @@
 		<br>
 		
 		<a href="index.html"><img src= https://static.vecteezy.com/system/resources/thumbnails/021/797/174/small/arrow-left-icon-isolated-on-white-background-vector.jpg width=100 ></a>
+	
+		</div>
+	
 	</body>
 	
 </html>
