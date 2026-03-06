@@ -1,6 +1,14 @@
+/* Mes styles pour tout le site Web */
+
 body{
   padding: 25px;
+  font-family: cursive;
+  background-color: #97bd97;
 }
-.title {
-	color: #5C6AC4;
+  /* Source: https://www.w3schools.com/cssref/pr_scroll-behavior.php */
+  /* Ce code fait en sorte que les sauts dans mes pages soient moins rigides */
+html {
+  scroll-behavior: smooth;
 }
+  
+

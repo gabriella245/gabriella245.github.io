@@ -5,16 +5,206 @@
 <html>
   
   <head>
+  
+  
     <meta charset="UTF-8">
-		<title>Mon site Web</title>
+		<title>Voyage</title>
+		<link rel="stylesheet" href="styles.css"/>
     
     <style>
+      
+      /* Voici mes styles CSS */
+			/* Source : https://www.w3schools.com/css/css_navbar_horizontal.asp */
+			/* Ce code permet d'avoir une barre de navigation dans mon site afin de naviguer vers les différentes pages */
+      body {
+			  margin: 0;
+			  padding: 0;
+			}
+
+			h2, p {
+			  margin: 10px;
+			}
+
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333333;
+			}
+
+			ul li {
+			  float: left;
+			}
+
+			ul li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			ul li a:hover {
+			  background-color: #111111;
+			}
+			
+			/* Mon code pour le titre de la page */
+			.titre_voyage {
+			  color: rgb(41, 117, 61)
+			}
+			
+			/* Code pour la première belle-boîte */
+			.mexique_explication {
+			  background-image: url(https://img.freepik.com/free-vector/watercolour-green-background_78370-1882.jpg?semt=ais_rp_progressive&w=740&q=80);
+			  text-align: center;
+        padding: 20px;
+        border: 0.3em solid #84b587;
+        max-width: 600px;
+			}
+			
+			/* Code pour les h2 de la page */
+			
+			h2 {
+			  font-family: cursive;
+			}
+			
+			/* L'espacement des descriptions des côtés gauche et droite de la page */
+			.mots {
+			  margin-left: 400px;
+			  margin-right: 400px;
+			}
       
     </style>
     
   </head>
   
   <body>
-      <p>page1</p>
+    
+    <!-- Liens internes pour ma barre de navigation -->
+    <ul class="">
+		  <li><a href="index.html">Accueil</a></li>
+		  <li><a href="poeme.html">Poème</a></li>
+		  <li><a href="voyage.html">Voyage</a></li>
+		  <li><a href="biographie.html">Biographie</a></li>
+		</ul>
+		
+		<!-- Titre de la page -->
+		<center><h1 class="titre_voyage">Voyagez au Mexique !</h1></center>
+		
+		<!-- Explication du Mexique dans une belle-boîte -->
+		<center><div class="mexique_explication">
+		  
+		  <p>Le Mexique est un pays en Amérique du Nord. C'est un pays très vaste avec une grande diversité
+		  et plein de belles places à visiter. Ils ont de la bonne nourriture, des plages extraordinaires et beaucoup plus!
+		  Il y a même des sites historiques très beaux à visiter. Ne manquez pas votre chance et venez visiter le Mexique !
+		  
+		</div></center>
+		
+		<br>
+		  
+		  <!-- Liste numérotée des endroits à visiter -->
+		  <h2>Endroits intéressants à visiter :</h2>
+		  
+		    <ol>
+		      <li>Chichén Itzá</li>
+		      <li>Riviera Maya</li>
+		      <li>Mexico City</li>
+		    </ol>
+		 
+		 <hr>
+		 
+		 <!-- Image et description du Chichén Itzá -->
+		 <center>
+		  <h3>1. Chichén Itzá</h3>
+		  <!-- Première image locale: -->
+		  <!-- Source de l'image: https://www.klook.com/en-CA/activity/142470-chichen-itza-cenote-valladolid-tour/ -->
+		  <img src= 
+		    "https://uploads.onecompiler.io/44dwcka5w/44f6cxyh5/chichen_itza.jpg" width=600>
+		    <p class="mots">Chichen Itza est un site archéologique bien connu et plus encore après avoir été sélectionné comme l'une des 7 nouvelles merveilles du monde le 7 juillet 2007.Chichen Itza reçoit plus de 2 500 000 visiteurs chaque année et le site archéologique est accessible en voiture, en bus ou avec différents circuits.
+		       Chichen Itza est ouvert tous les jours du lundi au dimanche à partir de 8 heures À 17 heures, dernière entrée à 16 heures. Et vous pouvez obtenir les billets sur le site.
+		       <a href= "https://www.chichenitza.com/fr" target="_blank">Cliquez ici</a> pour vous rendre à la source avec ces informations.</p>
+		       
+		    <br>
+		    
+		    <!-- Image et description de Riviera Maya -->
+		    <h3>2. Riviera Maya</h3>
+		    <!-- Deuxième image locale: -->
+		    <!-- Source de l'image:https://www.palladiumhotelgroup.com/fr/guide-touristique/mexique/riviera-maya -->
+		    <img src=
+		      "https://uploads.onecompiler.io/44dwcka5w/44f6cxyh5/riviera_maya.webp" width=600>
+		      <p class="mots">Longeant la mer des Caraïbes, la Riviera Maya est une zone touristique reconnue pour ses magnifiques plages de sable blanc et les nombreuses activités offertes à proximité. Si vous cherchez un endroit ensoleillé où l’on mange bien et ne s’ennuie jamais, la Riviera Maya vous comblera à coup sûr.  
+		         <a href="https://voyagesarabais.com/destinations/mexique/riviera-maya" target="_blank">Cliquez ici</a> pour vous rendre au site avec ces informations.</p>
+		    
+		    <br>
+		    
+		    <!-- Image et description de Mexico City -->
+		    <h3>3. Mexico City</h3>
+		    <!-- Troisième image locale: -->
+		    <!-- Source de l'image: https://www.sa.gov/Directory/Departments/EDD/International-Relations/Global-Relationships/Friendship-Cities/Mexico-City -->
+		    <img src=
+		      "https://uploads.onecompiler.io/44dwcka5w/44f6cxyh5/mexcio_city.jpg" width=600>
+		    <p class="mots">Mexico City, la capitale du Mexique, est un endroit que vous devez visiter si vous vous trouvez au Mexique. Il y a plein de choses à faire là-bas, comme explorer le <b>Zocalo</b>, <b>Le parc de l'Alameda Central</b>, et beaucoup plus ! C'est une ville extrêmement belle que vous ne retrouverez pas dans
+		       autres endroits dans le monde. Je suis certaine que vous n'allez aucunement regretter votre choix si vous visitez cette belle ville. <a href="https://mexique-voyages.com/mexico" target="_blank">Cliquez ici</a> pour plus d'information sur Mexico City.</p>
+		    
+		 </center>
+		 
+		 <br>
+		 <hr>
+		 
+		 <!-- Liste numérotée des mets populaires -->
+		 <h2>Mets populaires que vous devez goûter :</h2>
+		 
+		 <ol>
+		   <li>Les tacos</li>
+		   <li>La quesadilla</li>
+		   <li>Les enchiladas</li>
+		 </ol>
+		 
+		 <hr>
+		 
+		 <!-- Tableau avec les trois mets à goûter -->
+		 <center>
+		   
+		   <table border="1" width="75%" style = "text-align: center;">
+		     
+		     <tr>
+		       
+		       <th>Les tacos</th>
+		       <th> <img src=
+		              "https://images.ctfassets.net/rc3dlxapnu6k/4E1pIsjBC4gizlL6gpIJdI/69427e994c226ed288c06a965a2c5861/Mexikanisches_Gericht__Tacos.jpg" width=400></th>
+		      <th>Les tacos sont le plat le plus populaire du Mexique. Il existe un nombre presque infini de garnitures, et les tacos peuvent être préparés sous différentes formes. Vous trouverez des versions avec différentes tortillas, fais à base de harina (farine), maïs et pan Árabe (pain plat), et avec des garnitures allant de la viande grillée à la broche au poisson frit croustillant. 
+	            Il existe même des variantes roulées et cuites sur un comal (plaque de grillage en argile) jusqu'à ce que les tacos soient croustillants. Si vous testez les spécialités mexicaines lors d'une visite, goûtez autant de tacos différents que possible. <a href="https://www.tourlane.fr/amerique-du-nord/mexique/specialites-culinaires/#tacos" target="_blank">Cliquez ici</a> pour vous rendre au site avec ces informations.</th>
+		      
+		     </tr>
+		     
+		     <tr>
+		       
+		       <th>La quesadilla</th>
+		       <th> <img src=
+	        "https://www.bienmanger.com/tinyMceData/images/contents/1883/content_lg.jpg" width=400></th>
+	         <th>La quesadilla est un classique de la cuisine mexicaine. Elle se compose de tortillas de maïs ou de blé, fourrée de fromage et de nombreux autres ingrédients, réchauffée sur un « comal », une plaque de grill plate, ou dans une poêle chaude jusqu'à ce que le fromage soit fondu et la tortilla grillée. 
+	        Dans certains endroits du Mexique, les locaux mangent une version beaucoup plus simplifiée : il se peut que la quesadilla que vous ayez commandée ne soit pas fourrée au fromage fondant.
+	        <a href= "https://www.tourlane.fr/amerique-du-nord/mexique/specialites-culinaires/#quesadilla" target="_blank">Cliquez ici</a> pour vous rendre au site avec ces informations.</th>
+		       
+		     </tr>
+		     
+		     <tr>
+		       
+		       <th>Les enchiladas</th>
+		       <th><img src=
+		            "https://cdn.pratico-pratiques.com/app/uploads/sites/2/2018/08/27224929/enchiladas-au-boeuf-hache.jpeg" width=400></th>
+		       <th>Les enchiladas sont peut-être le plat le plus célèbre du Mexique, et ses différentes variantes régionales dans tout le pays le rendent intéressant. Les tortillas de maïs sont brièvement saisies dans une poêle avec de l'huile. Elles sont ensuite plongées dans une sauce au piment, roulées autour d'une garniture (souvent de la viande, du poisson, des légumes ou du fromage) et cuites au four.
+		           Enchilar signifie « assaisonner de piment ». On peut donc s'attendre à un peu de piquant. Selon la région, il existe des versions avec différents types de mole, de sauce aux haricots noirs, de salsa verde (sauce tomatillo verte), de suizas (sauce à la crème) et de sauces tomate. Bien entendu, le goût varie en fonction des différents ingrédients de la farce, à vous de découvrir toutes les possibilités.
+		           <a href= "https://www.tourlane.fr/amerique-du-nord/mexique/specialites-culinaires/#enchiladas" target="_blank">Cliquez ici</a> pour vous rendre au site avec ces informations.</th>
+		     </tr>
+		     
+		   </table>
+		   
+		   <br>
+		   
+		 </center>
+		
+  
   </body>
 </html>

@@ -1,15 +1,18 @@
-<!-- Ma page de biographie -->
+<!-- Le code pour ma page de biographie -->
 
 <!DOCTYPE html>
 
 <html>
-
-	<head>
-		<meta charset="UTF-8">
-		<title>Voyage</title>
-
-		<style>
-			body {
+  
+  <head>
+    
+    <meta charset="UTF-8">
+		<title>Mon site Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+      
+      body {
 			  margin: 0;
 			  padding: 0;
 			}
@@ -17,8 +20,10 @@
 			h2, p {
 			  margin: 10px;
 			}
-
-			ul {
+			
+			/* Source: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+      /* Barre de navigation horizontal */
+			.nav-horiztonal {
 			  list-style-type: none;
 			  margin: 0;
 			  padding: 0;
@@ -26,11 +31,11 @@
 			  background-color: #333333;
 			}
 
-			ul li {
+			.nav-horiztonal li {
 			  float: left;
 			}
 
-			ul li a {
+			.nav-horiztonal li a {
 			  display: block;
 			  color: white;
 			  text-align: center;
@@ -38,22 +43,172 @@
 			  text-decoration: none;
 			}
 
-			ul li a:hover {
+			.nav-horiztonal li a:hover {
 			  background-color: #111111;
 			}
-		</style>
-	</head>
-	
-	<body style="background-color: #97bd97;">
-
-		<ul>
-		  <li><a href="#index.html">Accueil</a></li>
-		  <li><a href="#poeme.html">Poème</a></li>
-		  <li><a href="#voyage.html">Voyage</a></li>
-		  <li><a href="#biographie.html">Biographie</a></li>
+      
+      /* Source: https://www.w3schools.com/css/css_navbar_vertical.asp */
+      /* Barre de navigation verticale */
+      .nav-vertical {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+      }
+      
+      .nav-vertical li a {
+        display: block;
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+      .nav-vertical li a:hover {
+        background-color: #555555;
+        color: white;
+      }
+      
+      /* Code pour changer la couleur des instructions */
+      #instruction {
+        color: rgb(128, 41, 24);
+      }
+      
+      /* Code pour faire en sorte que l'image soit à côté du paragraphe de Qui-suis-je ? -->
+      .table {
+        margin-left: 300px;
+        margin-right: 300px;
+      }
+      
+      /* Code pour changer la couleur des sous-titres */
+      h2 {
+        color: rgb(81, 115, 77);
+      }
+      
+      /* Code pour changer l'espacement entre les images des liens */
+      .images {
+        margin: 20px;
+      }
+      
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <!-- Liens internes pour la barre de navigation hoizontale -->  
+    <ul class= "nav-horiztonal">
+		  <li><a href="index.html">Accueil</a></li>
+		  <li><a href="poeme.html">Poème</a></li>
+		  <li><a href="voyage.html">Voyage</a></li>
+		  <li><a href="biographie.html">Biographie</a></li>
 		</ul>
 		
-		
-	</body>
-	
+		<center>
+		  
+		  <!-- Titre pour la page de biographie -->
+		  <h1>Biographie</h1>
+		  
+		   <!-- Liens internes pour la barre de navigation verticale -->
+		   <br>
+       <p id="instruction">Cliquez un bouton ci-dessous pour naviuer vers une section précise de la page :</p>
+       <br>
+        <ul class="nav-vertical">
+          <li><a href="#qui-suis-je">Qui suis-je ?</a></li>
+          <li><a href="#liens">Mes liens préférés</a></li>
+          <li><a href="#competences">Mes compétences</a></li>
+        </ul>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- Section Qui suis-je ? -->
+        <a name="qui-suis-je"><h2>Qui suis-je ?</h2>
+        <table class="table">
+        
+        <tr>
+          <th><img src= "https://static.vecteezy.com/system/resources/thumbnails/071/503/352/small/lady-wearing-batik-skirt-and-kebaya-top-png.png" width="150" class="moi-image"></th>
+          <th>Bonjour ! Je m'appelle Gabriella et je suis en 10e à l'école secondaire catholique Paul-Desmarais. J'aime venir à l'école pour voir mes amis et apprendre de nouvelles choses, mais ça devient très
+              fatiguant! J'aimerais ça que la fin de semaine soit plus longue afin que je puisse me reposer, m'amuser, et faire un peu d'études. Dans cette page, vous pourrez voir mes liens préférés ainsi qu'un
+              tableau avec mes compétences technologiques. Amusez-vous !</th>
+        </tr>
+        
+      </table></a>
+		  
+		  <br>
+		  <br>
+		  <br>
+		  
+		  <!-- Section avec mes liens préférés -->
+		  <a name="liens"></a><h2>Mes liens préférés</h2>
+		    <br>
+		    
+		    <a href="https://fr.sporcle.com/" target="_blank" class="images"><img src= "https://www.sporcle.com/blog/wp-content/uploads/2022/06/1-1.jpeg" width=200></a>
+		    <a href="https://slidesgo.com/" target="_blank" class="images"><img src= "https://media.slidesgo.com/storage/46332723/upload.jpeg" width=180></a>
+		    <a href="https://www.w3schools.com/" target="_blank" class="images"><img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREUNIgiPO0iTxQOXY0GW2x7u_aDEIWrTb5nA&s" width=180></a>
+		  
+		  </a>
+		  
+		  
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  <br>
+		  
+		    <!-- Section avec le tableau de compétences -->
+  		  <a name="competences"><h2>Mes compétences en technologie</h2>
+  		    <br>
+  		    
+  		     <table border="1"> 
+            <tr>
+              <th rowspan="2">Compétences</th>
+              <th colspan="3">Niveau</th>
+            </tr>
+            
+            <tr>
+              <td>Excellent</td>
+              <td>Moyen</td>
+              <td>Faible</td>
+            </tr>
+            
+            <tr>
+              <td>HTML</td>
+              <td>      </td>
+              <td>X</td>
+              <td>      </td>
+            </tr>
+            
+            <tr>
+              <td>CSS</td>
+              <td>      </td>
+              <td>X</td>
+              <td>      </td>
+            </tr>
+            
+            <tr>
+              <td>Javascript</td>
+              <td>      </td>
+              <td>      </td>
+              <td>X</td>
+            </tr>
+  
+        </table>
+  		  
+  		</a>
+  		
+  		<br>
+  		<br>
+  		<br>
+  		<br>
+		  
+		</center>
+      
+  </body>
 </html>
